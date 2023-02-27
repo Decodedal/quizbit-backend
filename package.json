@@ -17,5 +17,13 @@
     "node-fetch": "^3.3.0",
     "nodemon": "^2.0.20",
     "openai": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decodedal/quizbit-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Decodedal/quizbit-backend/issues"
+  },
+  "homepage": "https://github.com/Decodedal/quizbit-backend#readme"
 }
