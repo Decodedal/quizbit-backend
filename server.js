@@ -1,9 +1,14 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-app.get('/', (req,res) =>{
-    res.send("hello world")
+app.get('/', async(req,res) =>{
+    const response = await fetch(apiEndpoint);
+    const body = await response.text();
+
+    // console.log(body);
+    res.send(body)
 })
 
 app.listen(4000, () =>{
